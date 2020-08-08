@@ -14,8 +14,11 @@ variables:
 
 steps:
 - task: UseDotNet@2
+  displayName: 'Use .Net Core sdk 2.2.x'
   inputs:
-    version: '3.1.200'
+    version: 2.2.x
+
+steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: test
