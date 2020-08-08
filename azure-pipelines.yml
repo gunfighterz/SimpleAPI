@@ -17,8 +17,6 @@ steps:
   displayName: 'Use .Net Core sdk 2.2.x'
   inputs:
     version: 2.2.x
-
-steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: test
